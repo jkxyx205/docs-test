@@ -1,3 +1,5 @@
+import Color from '@site/src/components/Color';
+
 # 在 iCloud Drive 下创建目录 `docusaurus`, 命令行进入 `docusaurus`
 ```
 npm init docusaurus@latest
@@ -17,6 +19,7 @@ git push -u origin main
 ```
 - 开启 github pages。docs-test/Settings/Pages/, Source 设置 Github Actions
 - 创建部署文件.github/workflows/deploy.yml。提示词：「docusaurus 自动部署到 GitHub Pages, 写一下部署的yml」，下面的配置是通过 Claude 3.5 sonnet 生成的
+
 `deploy.yml`
 ```yml
 name: Deploy Docusaurus to GitHub Pages
@@ -70,7 +73,8 @@ jobs:
 ```
 提交 push ,如果成功部署可以访问： https://jkxyx205.github.io/docs-test/
 
-WARNING:
+**<span style={{color:'red'}}>WARNING</span>**
+
 > For GitHub pages deployment, it is often '&lt;/projectName/&gt;'
 > 
 > baseUrl: '/docs-test/' # 非自定义域名
@@ -92,3 +96,6 @@ WARNING:
 ```
 .obsidian
 ```
+**<Color c="green">Good</Color>**
+
+> 双向链表阅读
