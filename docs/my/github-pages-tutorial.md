@@ -86,3 +86,9 @@ WARNING:
 [Deployment](https://docusaurus.io/docs/next/deployment)
 
 [https://github.com/jkxyx205/docs-test](https://github.com/jkxyx205/docs-test)
+
+# Obsidian 编辑
+`.gitignore` 添加
+```
+.obsidian
+```
