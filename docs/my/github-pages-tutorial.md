@@ -82,4 +82,7 @@ WARNING:
 - 添加域名解析docs-test CNAME jkxyx205.github.io
 - docs-test/Settings/Pages/Custom domain 填写域名 docs-test.xxx.com 并保存
 - Enforce HTTPS 勾选，http 会自动跳转到 https
+
 [Deployment](https://docusaurus.io/docs/next/deployment)
+
+[https://github.com/jkxyx205/docs-test](https://github.com/jkxyx205/docs-test)
