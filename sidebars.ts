@@ -21,6 +21,7 @@ const sidebars: SidebarsConfig = {
     'my/github-pages-tutorial',
     'my/my-docs1',
     'my/my-docs2',
+    'my/my-docs-new',
     {
       type: 'category',
       label: 'My Docs 3 & 4',

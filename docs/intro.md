@@ -1,7 +1,62 @@
 ---
 sidebar_position: 1
 ---
+# Untitled Diagram documentation
+## Summary
 
+- [Introduction](#introduction)
+- [Database Type](#database-type)
+- [Table Structure](#table-structure)
+	- [mm_material](#mm_material)
+	- [mm_batch](#mm_batch)
+- [Relationships](#relationships)
+- [Database Diagram](#database-Diagram)
+
+## Introduction
+
+## Database type
+
+- **Database system:** MySQL
+## Table structure
+
+### mm_material
+
+| Name        | Type          | Settings                      | References                    | Note                           |
+|-------------|---------------|-------------------------------|-------------------------------|--------------------------------|
+| **id** | BIGINT | 🔑 PK, not null , unique, autoincrement |  | |
+| **description** | VARCHAR(255) | not null  |  | | 
+
+
+### mm_batch
+
+| Name        | Type          | Settings                      | References                    | Note                           |
+|-------------|---------------|-------------------------------|-------------------------------|--------------------------------|
+| **id** | BIGINT | 🔑 PK, not null , unique, autoincrement |  | |
+| **code** | VARCHAR(255) | not null  |  | |
+| **material_id** | BIGINT | not null  | fk_mm_batch_material_id_mm_material | | 
+
+
+## Relationships
+
+- **mm_batch to mm_material**: many_to_one
+
+## Database Diagram
+
+```mermaid
+erDiagram
+	mm_batch }o--|| mm_material : references
+
+	mm_material {
+		BIGINT id
+		VARCHAR(255) description
+	}
+
+	mm_batch {
+		BIGINT id
+		VARCHAR(255) code
+		BIGINT material_id
+	}
+```
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
